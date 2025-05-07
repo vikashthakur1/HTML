@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+</head>
+<body>
+  <h2>Survey Form</h2>
+  <form method="post"> 
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" id="name" required title="Enter a valid name (only letters and spaces)."><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" required title="Enter a valid email address."><br><br>
+
+    <label for="language">Favorite Programming Language:</label><br>
+    <select name="language" id="language" required>
+      <option value="">--Select--</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="C++">C++</option>
+    </select><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label>Preferred Working Environment:</label><br>
+    <input type="checkbox" name="environment" id="office" value="Office">
+    <label for="office">Office</label><br>
+
+    <input type="checkbox" name="environment" id="remote" value="Remote">
+    <label for="remote">Remote</label><br>
+
+    <input type="checkbox" name="environment" id="hybrid" value="Hybrid">
+    <label for="hybrid">Hybrid</label><br><br>
+
+    <button type="submit">Submit</button>
+    <br><br>
+</form>
+    <hr>
+    <h2>Registration Form</h2>
+     <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+    
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+    
+        <label for="reg-email">Email:</label><br>
+        <input type="email" id="reg-email" name="reg-email" required><br><br>
+    
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+    
+        <label>Gender:</label><br>
+        <input type="radio" id="reg-male" name="reg-gender" value="Male" required>
+        <label for="reg-male">Male</label><br>
+    
+        <input type="radio" id="reg-female" name="reg-gender" value="Female">
+        <label for="reg-female">Female</label><br>
+    
+        <input type="radio" id="reg-other" name="reg-gender" value="Other">
+        <label for="reg-other">Other</label><br><br>
+    
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label><br>
+    
+        <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+        <label for="traveling">Traveling</label><br>
+    
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports</label><br><br>
+    
+        <input type="submit">Register</input>
+
+        </form>
+    
+ 
+</body>
+</html>
