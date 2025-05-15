@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>My Accessible Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About us">About</a></li>
+                <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+    <img src="b.jpg" alt="Team members standing together at a company event">
+    </section>
+    <button aria-label="Open settings menu">click</button>
+    <section>
+     <h2>Live Updates</h2>
+     <div id="live-status" aria-live="polite">No updates yet.</div>
+    </section>
+
+    <main>
+      <form>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username">
+        <button aria-label="Submit contact form">submit</button>
+      </form> 
+    </main>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById('live-status').textContent = 'New message received!';
+      }, 3000);
+    </script>
+   
+   
+
+</body>
+</html>
